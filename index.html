@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>My Web Page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Welcome To My Web Page</h1>
+        </header>
+
+        <!-- Toogle content-->
+         <section id="toggle-section">
+            <h2>About</h2>
+            <button id="toggleButton">Show/Hide About</button>
+            <p id="about" class="hidden">This is my simple interactive Web Page </p>
+         </section>
+
+        <!-- Interactive section-->
+         <section id="counter-section">
+            <h2>Click Counter</h2>
+            <button id="counterButton">Click Me!!</button>
+            <p>Total Clicks: <span id="clickCount">0</span></p>
+         </section>
+
+        <!-- Form section-->
+         <section id="form-section">
+            <h2>Sign Up Form</h2>
+            <form id="signupForm" novalidate>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+                <small class="error" id="usernameError"></small>
+
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email">
+                <small class="error" id="emailError"></small>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+                <small class="error" id="passwordError"></small>
+
+                <button type="submit">Submit</button>
+            </form>
+         </section>
+         <script src="script.js"></script>
+    </body>
+</html>

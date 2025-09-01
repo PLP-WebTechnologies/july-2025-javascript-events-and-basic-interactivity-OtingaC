@@ -1,0 +1,31 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    color: darkblue;
+}
+
+section {
+    background-color: antiquewhite;
+}
+
+button {
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: greenyellow;
+}
+
+.hidden {
+    display: none;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+    display: block;
+}
