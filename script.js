@@ -28,9 +28,9 @@ const passwordError = document.getElementById("passwordError");
 
 signupForm.addEventListener("submit", (e) => {
     e.preventDefault();
-    let valid = true;
+    let isvalid = true;
 // Validate Username
-    if (username.ariaValueMax.trim().length < 3) {
+    if (username.value.trim().length < 3) {
         usernameError.textContent = "Username must be at least 3 characters long.";
         isValid = false;
     } else {
